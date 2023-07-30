@@ -10,6 +10,9 @@ Array.from(button).forEach((buttons)=>{
       string = ""
       document.querySelector('input').value = string;
     }
+    else if(e.target.innerHTML == 'C'){
+      display.innerText = display.innerText.slice(0, -1)
+    }
     else{ 
     console.log(e.target)
     string = string + e.target.innerHTML;
